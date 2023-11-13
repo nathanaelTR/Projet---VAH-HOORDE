@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    
+<head>
+    <title>Réservation</title>
+    <link href="./src/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="pageForm">
+    <main>
+        <form id="forma">
+            <div>
+                <label for="nom">Nom : </label>
+                <input type="text" name="nom" required />
+            </div>
+            <div>
+                <label for="prenom">Prénom : </label>
+                <input type="text" name="prenom" required />
+            </div>
+            <div>
+                <label for="email">Adresse mail : </label>
+                <input type="email" name="email" required />
+            </div>
+            <div>
+                <label for="nbEnfants">Nombre d'enfants : </label>
+                <select name="nbEnfants" required>
+                    <option value="">-- Sélectionner le nombre d'enfants --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5ouPlus">5 ou plus</option>
+                </select>
+            </div>
+            <div>
+                <label for="nbAdultes">Nombre d'adultes : </label>
+                <select name="nbAdultes" required>
+                    <option value="">-- Sélectionner le nombre d'adultes --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5ouPlus">5 ou plus</option>
+                </select>
+            </div>
+            <div>
+                <label for="dateReservation">Date de la réservation : </label>
+                <input type="date" name="dateReservation" value="" min="2023-11-14" max="2023-12-31" />
+            </div>
+            <div id="boutonsPaiement">
+                <label for="modePaiement">Choississez votre mode de paiement : </label>
+                <input id="boutonPayPal" type="button" title="Logo PayPal" alt="Logo PayPal" value="" />
+                <input id="boutonVisa" type="button" title="Logo Visa" alt="Logo Visa" value="" />
+                <input id="boutonMasterCard" type="button" title="Logo MasterCard" alt="Logo MasterCard" value="" />
+            </div>
+
+            <br>
+            <input id="confirmReserv" type="submit" value="Confirmer la réservation" />
+        </form>
+    </main>
+</body>
+
+</html>

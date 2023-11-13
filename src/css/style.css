@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+
+    font-family: sans-serif;
+
+
+}
+
+.--hamburger {
+
+    border: 2px solid black;
+    text-align: center;
+
+    width: 50px;
+    padding: 5px;
+    align-items: center;
+    align-self: center;
+    display: table;
+
+    transition: 0.5s;
+
+    cursor: pointer;
+
+}
+
+.--hamburger:hover {
+
+    background-color: rgb(46, 46, 46);
+
+    transition: 0.5s;
+
+    color: white;
+
+
+}
+
+
+.li-listing li {
+
+    border: 2px solid rgb(34, 34, 34);
+    color: white;
+    background-color: rgb(34, 34, 34);
+    padding: 15px;
+
+    list-style: none;
+    
+    width: 30px;
+
+    text-align: center;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.li-listing li:hover {
+
+    background-color: rgb(22, 22, 22);
+
+    transition: 0.5s;
+
+}
+
+#list-nav ul {
+    border-bottom: 2px solid rgb(34, 34, 34);
+    background-color: rgb(34, 34, 34);
+    display: table;
+    height: 100vh;
+}
+
+/*------------*/
+
+
+/* page Personnages */
+
+body {
+    background: linear-gradient(45deg, #c7c7c7, #999999);
+}
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    float: left;
+    padding: 2%;
+    background: url("/src/img/backgroundCard.webp");
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+#cartesPersonnages {
+    grid-gap: 20px;
+}
+
+
+
+
+/* page Réservation */
+
+#pageForm {
+    background: linear-gradient(45deg, #F4C66C, #f2a45e, #ed8052, #e55945)
+}
+
+
+#forma {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Trebuchet MS";
+}
+
+label,
+input {
+    display: block;
+}
+
+label {
+    margin: 20px 0 10px;
+}
+
+#confirmReserv {
+    background: greenyellow;
+    color: red;
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+    border: 4mm ridge rgba(211, 220, 50, .6);
+    box-shadow: 5px 5px 5px black;
+}
+
+#confirmReserv:hover {
+    background-color: rgb(255, 225, 0);
+}
+
+#confirmReserv:active {
+    box-shadow:
+        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#boutonsPaiement {
+    display: flex;
+    column-gap: 20px;
+
+}
+
+#boutonPayPal {
+    background-image: url("/src/img/PayPal.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 80px;
+}
+
+#boutonVisa {
+    background-image: url("/src/img/Visa.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 80px;
+}
+
+#boutonMasterCard {
+    background-image: url("/src/img/Mastercard.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 80px;
+}
