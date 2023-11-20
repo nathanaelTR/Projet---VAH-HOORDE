@@ -3,29 +3,41 @@
     padding: 0;
 }
 
-html, body {
+body {
 
-    font-family: sans-serif;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(45deg, #c7c7c7, #999999);
 
 }
 
+/* Nav Bar */
 .--hamburger {
 
     border: 2px solid black;
     text-align: center;
 
-    width: 50px;
+    width: max-content;
     padding: 5px;
+
     align-items: center;
     align-self: center;
-    display: table;
+
+    display: grid;
+
+    grid-column: 1;
 
     transition: 0.5s;
 
+    width: 70px;
+
+    margin: 0;
+
     cursor: pointer;
 
+  
+
 }
+
 
 .--hamburger:hover {
 
@@ -38,7 +50,6 @@ html, body {
 
 }
 
-
 .li-listing li {
 
     border: 2px solid rgb(34, 34, 34);
@@ -47,8 +58,7 @@ html, body {
     padding: 15px;
 
     list-style: none;
-    
-    width: 30px;
+
 
     text-align: center;
     cursor: pointer;
@@ -68,19 +78,17 @@ html, body {
     border-bottom: 2px solid rgb(34, 34, 34);
     background-color: rgb(34, 34, 34);
     display: table;
-    height: 100vh;
+    height: 150vh;
+
+    float: left;
+    clear: both;
 }
+
 
 /*------------*/
 
 
 /* page Personnages */
-
-body {
-    background: linear-gradient(45deg, #c7c7c7, #999999);
-}
-
-
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -94,9 +102,11 @@ body {
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
-img {
+.img_perso {
+    cursor: pointer;
     border-radius: 5px 5px 0 0;
 }
 
@@ -108,7 +118,79 @@ img {
     grid-gap: 20px;
 }
 
+/* page commentaire */
 
+#pageCommentaire {
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #c7c7c7, #999999);
+}
+
+#entréeTexte {
+    font-size: 18px;
+}
+
+
+.rating-list li {
+    float: right;
+    color: #ddd;
+    padding: 10px 5px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.rating-list li:hover,
+.rating-list li:hover~li {
+    color: #ffd700;
+}
+
+.rating-list {
+    display: inline-block;
+    list-style: none;
+}
+
+#contourFormulaire {
+    width: 0px;
+}
+
+#confirmEnvoieAvis {
+
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+    display: table;
+    margin: auto;
+}
+
+#confirmEnvoieAvis:hover {
+    background-color: rgb(27, 27, 27);
+    border-color: rgb(27, 27, 27);
+    color: white;
+    transition: 0.5s;
+}
+
+#pseudo {
+    display: table;
+    margin: 0 auto;
+
+    font-size: 18px;
+    border: 2px solid black;
+
+    border-radius: 5px;
+}
+
+
+/* page annexe */
+
+#logoPageAnnexe {
+    height: 400px;
+    width: 400spx;
+}
 
 
 /* page Réservation */
@@ -120,9 +202,13 @@ img {
 
 #forma {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
     font-family: "Trebuchet MS";
+}
+
+.rs_main {
+    display: flex;
 }
 
 label,
@@ -130,28 +216,46 @@ input {
     display: block;
 }
 
-label {
+#forma div {
+    align-items: center;
+    justify-content: center;
+}
+#forma div label {
     margin: 20px 0 10px;
 }
 
+.rs_main div {
+    margin-left: 30px;
+}
+
+.div_syno {
+
+    border: 2px solid black;
+    padding: 25px; 
+    border-radius: 5px;
+}
+
 #confirmReserv {
-    background: greenyellow;
-    color: red;
-    text-align: center;
-    font-size: x-large;
+ 
+    border: 2px solid black;
     padding: 10px;
-    border: 4mm ridge rgba(211, 220, 50, .6);
-    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+
+    font-size: 20px;
+
+    transition: 0.5s;
+
 }
 
 #confirmReserv:hover {
-    background-color: rgb(255, 225, 0);
-}
 
-#confirmReserv:active {
-    box-shadow:
-        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(32, 32, 32);
+    color: white;
+    transition: 0.5s;
+
 }
 
 #boutonsPaiement {
@@ -185,4 +289,96 @@ label {
     background-position: center;
     width: 150px;
     height: 80px;
+}
+
+/* Accueil - Index.html */
+
+
+.acc_main {
+    display: flex;
+    
+}
+
+.image_filme {
+   padding-left: 50px;
+}
+
+.filme_info iframe { 
+    margin-left: 10px;
+
+    margin-top: 10px;
+}
+
+.filme_info {
+    margin-left: 15px;
+}
+
+.filme_info h1 {
+ font-family: Arial;
+
+}
+
+.flex_logo_acc {
+    padding-left: 150px;
+}
+
+.flex_logo_acc a {
+
+    position: relative;top: 250px;
+
+    text-decoration: none;
+    color: black;
+
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+
+    transition: 0.5s;
+}
+
+.flex_logo_acc a:hover {
+    color: white;
+    background-color: rgb(36, 36, 36);
+    border-color: rgb(36, 36, 36);
+    transition: 0.5s;
+}
+
+/* page ciné club */
+
+
+.cc_slogan {
+
+    display: table;
+    margin: auto;
+
+}
+
+blockquote {
+    margin: 0px;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+    width: 500px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+.cc_legend {
+    font-weight: bold;
+}
+
+#titreCouleurs {
+    display: table;
+    margin: auto;
+    font-size: xx-large;
 }

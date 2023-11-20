@@ -1,0 +1,12 @@
+Nous avons pris contacte avec le client du projet - VAH HOORDE pour parler de la structure du site.
+Concernant la nav bar verticale et c'est obligation après une discussion la concernant
+
+ils sont accepté le changement de la nav bar par une nav bar un peu plus simple a faire fonctionner,
+
+Demande du client : 
+
+- Agrandir la taille de la nav bar verticale pour l'allongé !
+
+Nous avons parler des Problémes dessins mais dans l'ensemble du cahier des charges est complet.
+
+....

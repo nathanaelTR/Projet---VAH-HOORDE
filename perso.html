@@ -2,32 +2,54 @@
 
 <head>
     <title>Personnages</title>
-    <link href="./src/css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <main>
-        <h2>Round Card</h2>
+    <div>
+
+        <h1 class="--hamburger" onclick="list()"><i class="fa fa-bars" aria-hidden="true"></i></h1>
+ 
+        <div id="list-nav"></div>
+ 
+     </div>
+     <main>
+        <h2 style="text-align: center;margin-bottom: 20px;">Les personnages</h2>
 
         <div id="cartesPersonnages">
             <div class="card">
-                <img src="./src/img/img_avatar2.png" alt="Avatar" style="width:100%">
+                <img src="./src/img/tonquedec.webp" alt="Avatar" class="img_perso" style="width:100%">
                 <div class="container">
-                    <h4><b>Jane Doe</b></h4>
-                    <p>Interior Designer</p>
+                    <h4><b>Stéphane Belcourt</b></h4>
+                    <p>Acteur : Guillaume De Tonquédec</p>
                 </div>
             </div>
             <div class="card">
-                <img src="./src/img/img_avatar2.png" alt="Avatar" style="width:100%">
+                <img src="./src/img/belmondo.webp" alt="Avatar" class="img_perso" style="width:100%">
                 <div class="container">
-                    <h4><b>Monsieur Chaussure</b></h4>
-                    <p>Interior Designer</p>
+                    <h4><b>Lucas</b></h4>
+                    <p>Acteur : Victor Belmondo</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./src/img/londez.webp" alt="Avatar" class="img_perso" style="width:100%">
+                <div class="container">
+                    <h4><b>Gaëlle</b></h4>
+                    <p>Actrice : Guilaine Londez</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./src/img/gillet.webp" alt="Avatar" class="img_perso" style="width:100%">
+                <div class="container">
+                    <h4><b>Stéphane (jeune)</b></h4>
+                    <p>Acteur : Jérémy Gillet</p>
                 </div>
             </div>
     </main>
 </body>
-
-
-</body>
-
+<script src="./src/js/index.js"></script>
 </html>

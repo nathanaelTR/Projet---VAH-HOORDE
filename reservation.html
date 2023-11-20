@@ -4,27 +4,48 @@
     
 <head>
     <title>Réservation</title>
-    <link href="./src/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="pageForm">
-    <main>
+    <div>
+
+        <h1 class="--hamburger" onclick="list()"><i class="fa fa-bars" aria-hidden="true"></i></h1>
+ 
+        <div id="list-nav"></div>
+ 
+     </div>
+     <br><br>
+    <main class="rs_main">
+        <div>
+            <img src="./src/img/logo1.png" alt="logofilme" height="200px" width="200px">
+            <div class="div_syno">
+                <h4>Synopsis : </h4>
+                <p>Le romancier Stéphane Belcourt a accepté<br> de parrainer le bicentenaire d’une célèbre
+                    marque de cognac. <br>C’est l’occasion de revenir pour la première fois dans la ville où il a
+                    grandi. <br> Sur place, il rencontre Lucas,<br> le fils de son premier amour.<br> Les souvenirs affluent : le
+                    désir irrépressible,<br> les corps qui s’unissent, une passion qu’il faut taire... <br> Ce premier amour
+                    s’appelait Thomas. <br> Ils avaient 17 ans.</p>
+            </div>
+        </div>
         <form id="forma">
             <div>
                 <label for="nom">Nom : </label>
-                <input type="text" name="nom" required />
+                <input type="text" name="nom" id="nom" required />
             </div>
             <div>
                 <label for="prenom">Prénom : </label>
-                <input type="text" name="prenom" required />
+                <input type="text" name="prenom" id="prenom" required />
             </div>
             <div>
                 <label for="email">Adresse mail : </label>
-                <input type="email" name="email" required />
+                <input type="email" name="email" id="email" required />
             </div>
             <div>
                 <label for="nbEnfants">Nombre d'enfants : </label>
-                <select name="nbEnfants" required>
+                <select name="nbEnfants" id="nbEnfants" required>
                     <option value="">-- Sélectionner le nombre d'enfants --</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -35,7 +56,7 @@
             </div>
             <div>
                 <label for="nbAdultes">Nombre d'adultes : </label>
-                <select name="nbAdultes" required>
+                <select name="nbAdultes" id="nbAdultes" required>
                     <option value="">-- Sélectionner le nombre d'adultes --</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -46,7 +67,7 @@
             </div>
             <div>
                 <label for="dateReservation">Date de la réservation : </label>
-                <input type="date" name="dateReservation" value="" min="2023-11-14" max="2023-12-31" />
+                <input type="date" name="dateReservation" id="dateReservation" value="" min="2023-11-14" max="2023-12-31" />
             </div>
             <div id="boutonsPaiement">
                 <label for="modePaiement">Choississez votre mode de paiement : </label>
@@ -60,5 +81,7 @@
         </form>
     </main>
 </body>
+
+<script src="./src/js/index.js"></script>
 
 </html>

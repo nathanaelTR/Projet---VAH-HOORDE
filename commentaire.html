@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
-    <title>Commentaire</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commentaire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <main>
-        <form>
+   
+    <!-- Nav bar -->
+    <div>
 
-        </form>
-    </main>
+       <h1 class="--hamburger" onclick="list()"><i class="fa fa-bars" aria-hidden="true"></i></h1>
+
+       <div id="list-nav"></div>
+
+    </div>
+        <main id="pageCommentaire">
+            <h2>Commentaire</h2>
+            <form id="forma">
+                <fieldset id="contourFormulaire">
+                    <legend>Donnez nous votre avis</legend>
+                    <div>
+                        <label for="note">Votre note : </label>
+                        <ul class="list-inline rating-list">
+                            <li><i class="fa fa-star" title="5 étoiles"></i></li>
+                            <li><i class="fa fa-star" title="4 étoiles"></i></li>
+                            <li><i class="fa fa-star" title="3 étoiles"></i></li>
+                            <li><i class="fa fa-star" title="2 étoiles"></i></li>
+                            <li><i class="fa fa-star" title="1 étoile"></i></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <label for="pseudo">Votre pseudo (maximum 24 caractères): </label>
+                        <input type="text" id="pseudo" name="pseudo" placeholder="ex: Jérémy" minlength="1" maxlength="24" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="entréeTexte">Votre commentaire (maximum 1024 caractères) : </label>
+                        <textarea id="entréeTexte" rows="20" cols="100" maxlength="1024" required></textarea>
+                    </div>
+    
+                    <br>
+                    <input id="confirmEnvoieAvis" type="submit" value="Envoyer">
+                </fieldset>
+            </form>
+        </main>
+
 </body>
-
+<script src="./src/js/index.js"></script>
 </html>

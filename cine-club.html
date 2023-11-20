@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ciné-club</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+    <!-- Nav bar -->
+    <div>
+
+       <h1 class="--hamburger" onclick="list()"><i class="fa fa-bars" aria-hidden="true"></i></h1>
+
+       <div id="list-nav"></div>
+
+    </div>
+
+<main >
+    <div>
+        <h2 style="text-align: center;">Le ciné-club</h2>
+    </div>
+    <div>
+        <img id="logoPageAnnexe" src="src/img/logo1.png">
+    </div>
+    <div id="titreCouleurs">
+            <span style="color:black">Ciné-Clu</span>
+            <span style="color:rgb(211, 104, 122)">bébou !</span>
+    </div>
+    <div class="cc_slogan">
+            <blockquote>
+                <p>Pierre qui roule ne fait pas le moine</p>
+            </blockquote>
+        </div>
+    <div>
+        <form>
+            <fieldset class="cc_legend">
+                <legend>Souscrire à un abonnement (seulement 83.47€) : </legend>
+                <br>
+                <label for="email">Entrez votre adresse email (un lien d'inscription vous sera envoyé) : </label>
+
+                <input type="email" id="email" size="30" placeholder="exemple@gmail.com" required />
+                <br>
+                <input id="confirmEnvoieAvis" type="submit" value="Envoyer">
+            </fieldset>
+        </form>
+    </div>
+    </main>
+    <footer>
+        <a href="cine-club.html">Se désabonner</a>
+    </footer>
+</body>
+<script src="./src/js/index.js"></script>
+
+</html>
